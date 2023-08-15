@@ -1,7 +1,7 @@
 
 @mixin brightness {
     cursor: pointer;
-    filter: brightness(110%);
+    filter: brightness(50%);
 }
 
 @mixin shadow ($params) {
