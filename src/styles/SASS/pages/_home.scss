@@ -1,0 +1,26 @@
+.listCard {
+    background-color: #f6f6f6;
+    border-radius: 1.56rem;
+    @include margin-padding(all, 2.68rem 0, all, 3.5rem 3.1rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 3.12rem;
+
+    &:after {
+        content: '';
+        width: 30%;
+    }
+
+    @include mobile-only {
+        background-color: transparent;
+        @include margin-padding(all, 1.25rem 0, all, 0);
+        gap: 1.25rem;
+
+        &:after {
+            display: none;
+        }
+
+    }
+}
