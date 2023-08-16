@@ -2,7 +2,6 @@
     box-sizing: border-box;
     @include margin-padding(all, 0, all, 0);
     color: $font;
-    white-space: pre-line;
 }
 
 html {

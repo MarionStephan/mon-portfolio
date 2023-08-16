@@ -2,9 +2,8 @@
     @include margin-padding(all, 100px 0, null, null);
 
     &__titre {
-        text-align: right;
+        @include title ($yellow, right, h1);
         @include margin-padding(all, 0 200px 50px 0, null, null);
-        text-shadow: 3px 3.5px 0 rgba($yellow, 0.7);
     }
 
     &__pres {
@@ -13,6 +12,7 @@
         margin: auto;
         justify-content: space-evenly;
         align-items: center;
+        text-align: center;
 
         &__img {
             width: 300px;
@@ -21,7 +21,7 @@
         &__intro {
             background-color: $yellow;
             width: 45%;
-            border-radius: 0 0 125px 3px/3px 85px 5px 55px;
+            border-radius: $border-radiusCat;
 
             @include margin-padding (null, null, all, 30px);
             @include shadow (6px 7px 14px 0px rgba(156, 156, 156, 0.75));
@@ -33,9 +33,7 @@
     @include margin-padding(all, 100px 0, null, null);
 
     &__titre {
-        text-align: center;
-        @include margin-padding(all, 50px 0, null, null);
-        text-shadow: 3px 3.5px 0 rgba($yellow, 0.7);
+        @include title ($yellow, center, h2);
     }
 
     &__section {
@@ -52,7 +50,7 @@
         row-gap: 30px;
         width: 40%;
         border: 2px solid $font;
-        border-radius: 0 0 125px 3px/3px 85px 5px 55px;
+        border-radius: $border-radiusCat;
         box-shadow: 4px 4px 0px $yellow;
         @include margin-padding(null, null, all, 30px 50px);
 

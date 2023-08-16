@@ -1,0 +1,97 @@
+[
+    {
+        "title": "Développeur intégrateur web (alternance)",
+        "school": "OpenClassroom",
+        "city": "En ligne",
+        "year": {
+            "begin": "09 / 2022",
+            "end": "09 / 2023"
+        },
+        "description": [
+            "Niveau 5 - Diplôme RNCP36076",
+            "Assemblage des pages en HTML et CSS à partir de maquettes, sites responsive et soucieux de l'accessibilité et du référencement (SEO)",
+            "Site E-commerce en Javascript, création d'un plan de test",
+            "Implémentation d'une API, stockage de données, CRUD",
+            "Initialisation d'une application avec React App, utilisation de React Router pour la navigation et mise en place de composants réutilisables"
+        ]
+    },
+    {
+        "title": "Créez un site web avec Drupal 9",
+        "school": "Udemy",
+        "city": "En ligne",
+        "year": {
+            "begin": "Mai 2022",
+            "end": ""
+        },
+        "description": [
+            "Réalisation d'un site web de cuisine",
+            "Utilisation de l'interface administrateur",
+            "Création des différents contenus, blocs, menus, listes",
+            "Personnalisation de l'habillage, installation d'un nouveau thème"
+        ]
+    },
+    {
+        "title": "Créez votre portfolio responsive avec Bootstrap",
+        "school": "Udemy",
+        "city": "En ligne",
+        "year": {
+            "begin": "Juin 2022",
+            "end": ""
+        },
+        "description": [
+            "Création d'un portfolio en ligne",
+            "Mise en place de fichiers template",
+            "Introduction à PHP"
+        ]
+    },
+    {
+        "title": "Master Études médiévales",
+        "school": "École Pratique des Hautes Études",
+        "city": "Paris, France",
+        "year": {
+            "begin": "2018",
+            "end": "2021"
+        },
+        "description": [
+            "Rédaction d'un mémoire consacré à l'étude du vêtement ecclésiastique armorié (1300-1600).",
+            "Mention très bien"
+        ]
+    },
+    {
+        "title": "Obtention licences d'Histoire et d'Histoire de l'Art",
+        "school": "Université Rennes II",
+        "city": "Rennes, France",
+        "year": {
+            "begin": "Juin 2018",
+            "end": ""
+        },
+        "description": [
+            "Études générales de l'Histoire et de l'Histoire de l'Art de l'Antiquité à l'Époque contemporaine et sur différentes régions du monde"
+        ]
+    },
+    {
+        "title": "Première année de premier cycle",
+        "school": "École du Louvre",
+        "city": "Paris, France",
+        "year": {
+            "begin": "2012",
+            "end": "2013"
+        },
+        "description": [
+            "Spécialité aménagement, décoration et architecture des grandes demeures",
+            "Option héraldique"
+        ]
+    },
+    {
+        "title": "Baccalauréat scientifique spécialité mathématiques",
+        "school": "Lycée Bertrand d'Argentré",
+        "city": "Vitré, France",
+        "year": {
+            "begin": "2012",
+            "end": ""
+        },
+        "description": [
+            "Mention assez bien"
+        ]
+    }
+]

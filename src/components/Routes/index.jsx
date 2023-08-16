@@ -1,14 +1,16 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../../pages/Home';
-import Header from '../../layout/Navigation';
+import Formations from '../../pages/Formations';
+import Navigation from '../../layout/Navigation';
 
 const IndexRoutes = () => {
     return(
         <BrowserRouter>
-        <Header/>
+        <Navigation/>
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/Formations" element={<Formations />} />
             </Routes>
         </BrowserRouter>
     )

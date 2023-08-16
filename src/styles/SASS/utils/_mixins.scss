@@ -1,4 +1,12 @@
-
+@mixin title ($color, $align, $h){
+    text-shadow: 3px 3.5px 0 rgba($color, 0.8);
+    text-align: $align;
+    @if $h==h1{
+        @include margin-padding(all, 0 200px 50px 0, null, null);
+    }@else{
+        @include margin-padding(all, 50px 0, null, null);
+    }
+}
 @mixin brightness {
     cursor: pointer;
     filter: brightness(50%);
@@ -48,4 +56,88 @@
     @media screen and (max-width: map-get($breakpoints, phone)) {
         @content
     }
+}
+
+$pi: 3.14159265359;
+$_precision: 10;
+
+@function pow($base, $exp) {
+  $value: $base;
+  @if $exp > 1 {
+    @for $i from 2 through $exp {
+      $value: $value * $base;
+    }
+  }
+  @if $exp < 1{
+    @for $i from 0 through -$exp {
+      $value: $value / $base;
+    }
+  }
+  @return $value;
+}
+
+@function fact($num) {
+  $fact: 1;
+  @if $num > 0{
+    @for $i from 1 through $num {
+      $fact: $fact * $i;
+    }
+  }
+  @return $fact;
+}
+
+@function _to_unitless_rad($angle) {
+  @if unit($angle) == "deg" {
+    $angle: $angle / 180deg * $pi;
+  }
+  @if unit($angle) == "rad" {
+    $angle: $angle / 1rad;
+  }
+  @return $angle;
+}
+
+@function sin($angle){
+  $a: _to_unitless_rad($angle);
+  $sin: $a;
+  @for $n from 1 through $_precision {
+    $sin: $sin + (pow(-1, $n) / fact(2 * $n + 1) ) * pow($a, (2 * $n + 1));
+  }
+  @return $sin;
+}
+
+@function cos($angle){
+  $a: _to_unitless_rad($angle);
+  $cos: 1;
+  @for $n from 1 through $_precision {
+    $cos: $cos + ( pow(-1,$n) / fact(2*$n) ) * pow($a,2*$n);
+  }
+  @return $cos;
+}
+
+@function tan($angle){
+  @return sin($angle) / cos($angle);
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+@mixin foldedCorner($angle: 30deg, $bgColor, $size) {
+  position: relative;
+  background: $bgColor;
+  background: linear-gradient($angle - 180deg, transparent $size, $bgColor 0);
+  
+  $x: $size / sin($angle);
+  $y: $size / cos($angle);
+  $rotateAngle: 180deg - $angle * 2;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    background: linear-gradient($angle + 180deg, transparent 50%, rgba(darken($bgColor, 15%), .6) 0, rgba( darken($bgColor, 20%),.8) 100%) 100% 0 no-repeat;
+    width: $x;
+    height: $y;
+    transform: rotateX(180deg) rotateZ($rotateAngle);
+    border-bottom-left-radius: inherit;
+    box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+  }
 }

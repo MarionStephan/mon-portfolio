@@ -1,6 +1,6 @@
 import React from 'react'
-import Presentation from '../../components/Home/presentation'
-import Stack from '../../components/Home/stack'
+import Presentation from '../../components/Home/Presentation'
+import Stack from '../../components/Home/ListeStack'
 
 function Home() {
     return (
