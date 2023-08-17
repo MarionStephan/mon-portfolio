@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Alternante développeuse web (4j entreprise / 1j formation",
+        "school": "ConsolWeb",
+        "city": "Vitré, France",
+        "year": {
+            "begin": "09 / 2022",
+            "end": "09 / 2023"
+        },
+        "description": [
+            "Mise en place de maquettes Figma correspondant aux demandes des clients",
+            "Développement de sites avec une administration adaptée à chaque client pour la gestion de ses contenus et soucieux du référencement et de l'accessibilité",
+            "Utilisation de bases de données en SQL, maintenance et amélioration des sites web existants",
+            "Gestion de projets"
+        ]
+    },
+    {
+        "title": "Contributrice",
+        "school": "Base de données SIGILLA",
+        "city": "Paris, France",
+        "year": {
+            "begin": "2019",
+            "end": "2023"
+        },
+        "description": [
+            "Contrat avec la DRAC du Grand Est pour saisir la collection Roserot consacrée à la sigillographie de Haute-Marne",
+            "Saisie des sceaux du clergé parisien relevés par Douet d'Arcq et des sceaux ecclésiastiques relevés dans le Poitou par Eygun",
+           "Création et gestion des comptes Instagram et Twitter de la base de données",
+            "Rang de content administrator : Participation à la correction des notices saisies par tous les collaborateurs de la base"
+        ]
+    },
+    {
+        "title": "Stagiaire département des livres anciens et manuscrits",
+        "school": "Christie’s",
+        "city": "Paris, France",
+        "year": {
+            "begin": "07 / 2018",
+            "end": "12 / 2018"
+        },
+        "description": [
+            "Département des Livres anciens et Manuscrits"
+        ]
+    },
+    {
+        "title": "Hôtesse de caisse",
+        "school": "Musée d'Orsay",
+        "city": "Paris, France",
+        "year": {
+            "begin": "Été 2019",
+            "end": ""
+        },
+        "description": [
+            ""
+        ]
+    },
+    {
+        "title": "Hôtesse de caisse",
+        "school": "Total, Brioche Dorée",
+        "city": "Aire de Mondevert, France",
+        "year": {
+            "begin": "Été 2017",
+            "end": ""
+        },
+        "description": [
+            ""
+        ]
+    },
+    {
+        "title": "Hôtesse de caisse",
+        "school": "Super U",
+        "city": "La Turballe, France",
+        "year": {
+            "begin": "Été 2016",
+            "end": ""
+        },
+        "description": [
+            ""
+        ]
+    }
+]
