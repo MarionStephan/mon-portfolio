@@ -1,0 +1,86 @@
+[
+    {
+        "title": "KASA",
+        "intitule": "'Créez une application web de location immobilière avec React'",
+        "description": [
+            "Initialiser une application avec Create React App",
+            "Configurer la navigation entre les pages de l'application avec React Router",
+            "Développer des éléments de l'interface d'un site web grâce à des composants React"
+        ],
+        "tags":[
+            "React",
+            "SASS"
+        ],
+        "link":"https://github.com/MarionStephan/OpenClassroomsP7"
+        
+    },
+    {
+        "title": "Piiquante",
+        "intitule": "'Construisez une API sécurisée pour une application d'avis gastronomiques'",
+        "description": [
+            "Mettre en œuvre des opérations CRUD de manière sécurisée",
+            "Implémenter un modèle logique de données conformément à la réglementation",
+            "Stocker des données de manière sécurisée"
+        ],
+        "tags":[
+            "Node.js",
+            "Express",
+            "MongoDB",
+            "API"
+        ],
+        "link":"https://github.com/MarionStephan/OpenClassroomsP6"
+        
+    },
+    {
+        "title": "Kanap",
+        "intitule": "'Construisez un site e-commerce en JavaScript'",
+        "description": [
+            "Créer un plan de test pour une application",
+            "Valider des données issues de sources externes",
+            "Interagir avec un web service avec JavaScript",
+            "Gérer des événements JavaScript"
+        ],
+        "tags":[
+            "Javascript",
+            "API"
+        ],
+        "link":"https://github.com/MarionStephan/OpenClassroomsProject5"
+        
+    },
+    {
+        "title": "Agence La Panthère",
+        "intitule": "'Optimisez un site web existant'",
+        "description": [
+            "Réaliser une recherche des bonnes pratiques en développement web",
+            "Écrire un code HTML et CSS maintenable",
+            "Optimiser la taille et la vitesse d’un site web",
+            "Assurer l'accessibilité d'un site web",
+            "Optimiser le référencement d'un site web"
+        ],
+        "tags":[
+            "SEO",
+            "Performance",
+            "Accessibilité",
+            "Bootstrap"
+        ],
+        "link":"https://github.com/MarionStephan/OpenClassroomsProject4"
+        
+    },
+    {
+        "title": "Oh My Food",
+        "intitule": "'Dynamisez une page web avec des animations CSS'",
+        "description": [
+            "Mettre en œuvre des effets CSS graphiques avancés",
+            "Mettre en place une structure de navigation pour un site web",
+            "Assurer la cohérence graphique d'un site web",
+            "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+            "Mettre en place son environnement Front-End"
+        ],
+        "tags":[
+            "SASS",
+            "Keyframes",
+            "mobile-first"
+        ],
+        "link":"https://github.com/MarionStephan/OpenClassroomsProject"
+    }
+]
