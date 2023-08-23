@@ -43,35 +43,11 @@
     },
     {
         "title": "Hôtesse de caisse",
-        "school": "Musée d'Orsay",
-        "city": "Paris, France",
-        "year": {
-            "begin": "Été 2019",
-            "end": ""
-        },
-        "description": [
-            ""
-        ]
-    },
-    {
-        "title": "Hôtesse de caisse",
-        "school": "Total, Brioche Dorée",
-        "city": "Aire de Mondevert, France",
-        "year": {
-            "begin": "Été 2017",
-            "end": ""
-        },
-        "description": [
-            ""
-        ]
-    },
-    {
-        "title": "Hôtesse de caisse",
-        "school": "Super U",
-        "city": "La Turballe, France",
+        "school": ["Musée d'Orsay ", "- Total, Brioche Dorée ", "- Super U"],
+        "city": ["Paris, Mondevert, La Turballe"],
         "year": {
             "begin": "Été 2016",
-            "end": ""
+            "end": "Été 2019"
         },
         "description": [
             ""

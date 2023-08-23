@@ -23,6 +23,7 @@ function ListePortfolio() {
                             title={projet.title}
                             intitule={projet.intitule}
                             description={projet.description}
+                            link={projet.link}
                         />
 
                         <Slideshow slides={projet.pictures}/>

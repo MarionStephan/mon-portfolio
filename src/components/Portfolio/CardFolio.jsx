@@ -11,8 +11,8 @@ function CardFolio(props) {
         <li key={index}>{item}</li>
       ))}</ul>
       <div className="portfolio__article__btn">
-        <a><i class="fa-brands fa-github"></i></a>
-        <a>Visiter le site</a>
+        <a href={props.link[0]}><i class="fa-brands fa-github"></i></a>
+        <a href={props.link[1]}>Visiter le site</a>
       </div>
     </div>
   );

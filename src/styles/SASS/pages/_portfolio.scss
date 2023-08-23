@@ -210,15 +210,14 @@
         padding: 0 .625rem;
         position: absolute;
         text-align: center;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
+        bottom: -10px;
+        
         transform: translate(-50%, -50%);
         width: 100%;
-
         &__arrow {
             cursor: pointer;
             @include margin-padding(null, null, all, 0 1.4375rem);
-
+            height: 2.5rem;
             @include mobile-only {
                 height: 1.5rem;
                 @include margin-padding(null, null, all, 0);
@@ -233,7 +232,7 @@
         bottom: 1.5625rem;
         width: 100%;
         font-size: 1.125rem;
-        color: white;
+        color: $font;
 
         @include mobile-only {
             display: none;

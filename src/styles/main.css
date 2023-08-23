@@ -30,11 +30,11 @@
 }
 @keyframes menu {
   0% {
-    transform: translatey(1.25rem);
+    transform: translatex(100vw);
     opacity: 0;
   }
   100% {
-    transform: translatey(0rem);
+    transform: translatex(0);
     opacity: 1;
   }
 }
@@ -102,6 +102,10 @@ h1, h2 {
 }
 
 .nav {
+  position: relative;
+  z-index: 999;
+}
+.nav__desktop {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -110,52 +114,157 @@ h1, h2 {
   align-items: flex-end;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-.nav__logo {
+.nav__desktop__logo {
   width: 13rem;
   height: 4.25rem;
 }
-@media screen and (max-width: 768px) {
-  .nav__logo {
-    width: 9rem;
-    height: 3rem;
-  }
-}
-.nav div {
+.nav__desktop div {
   display: flex;
   width: 70%;
   justify-content: space-between;
   font-size: 1.5rem;
 }
-@media screen and (max-width: 992px) {
-  .nav div {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .nav div {
-    font-size: 0.75rem;
-  }
-}
-.nav__link {
+.nav__desktop__link {
   color: #353535;
   list-style: none;
   padding: 30px 20px 10px 20px;
   border-radius: 15px 15px 0 0;
 }
-.nav__link:nth-of-type(1), .nav__link:nth-of-type(5) {
+.nav__desktop__link:nth-of-type(4n+1) {
   background-color: #E4C1F9;
 }
-.nav__link:nth-of-type(2) {
+.nav__desktop__link:nth-of-type(2) {
   background-color: #D3F8E2;
 }
-.nav__link:nth-of-type(3) {
+.nav__desktop__link:nth-of-type(3) {
   background-color: #A9DEF9;
 }
-.nav__link:nth-of-type(4) {
+.nav__desktop__link:nth-of-type(4) {
   background-color: #F694C1;
 }
-.nav__link__active {
+.nav__desktop__link__active {
   margin-top: -20px;
+}
+
+.navbar__burger {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: #353535;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
+.navbar__burger:hover {
+  cursor: pointer;
+}
+
+.burger-bar,
+.burger-bar::before,
+.burger-bar::after {
+  display: block;
+  width: 40px;
+  height: 3px;
+  position: relative;
+  border-radius: 3px;
+  background: #F694C1;
+  transition: all 0.5s ease-in-out;
+}
+
+.burger-bar::before, .burger-bar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.burger-bar::before {
+  transform: translateY(-12px);
+}
+.burger-bar::after {
+  transform: translateY(12px);
+}
+
+.show-nav .burger-bar::before {
+  transform: rotate(45deg);
+}
+
+.show-nav .burger-bar::after {
+  transform: rotate(-45deg);
+}
+
+.show-nav .burger-bar {
+  background: transparent;
+  width: 0;
+}
+
+.nav__mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 100px;
+  align-items: flex-end;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav__mobile__logo {
+  width: 13rem;
+  height: 4.25rem;
+}
+.nav__mobile div {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  font-size: 1.5rem;
+  right: -100vw;
+}
+.nav__mobile__link {
+  color: #353535;
+  list-style: none;
+  padding: 30px 20px 10px 20px;
+  height: 15%;
+  border-top-left-radius: 50px;
+  font-size: 3rem;
+  text-align: center;
+}
+.nav__mobile__link:nth-of-type(4n+1) {
+  background-color: #E4C1F9;
+}
+.nav__mobile__link:nth-of-type(2) {
+  background-color: #D3F8E2;
+}
+.nav__mobile__link:nth-of-type(3) {
+  background-color: #A9DEF9;
+}
+.nav__mobile__link:nth-of-type(4) {
+  background-color: #F694C1;
+}
+.nav .show-nav div {
+  right: 0;
+  backdrop-filter: brightness(0.5);
+  transition: all 0.5s ease-in-out;
+}
+.nav .show-nav .nav__mobile__link {
+  animation: menu 1s forwards;
+  opacity: 0;
+}
+.nav .show-nav .nav__mobile__link:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.nav .show-nav .nav__mobile__link:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.nav .show-nav .nav__mobile__link:nth-of-type(3) {
+  animation-delay: 0.6s;
+}
+.nav .show-nav .nav__mobile__link:nth-of-type(4) {
+  animation-delay: 0.8s;
+}
+.nav .show-nav .nav__mobile__link:nth-of-type(5) {
+  animation-delay: 1s;
 }
 
 .header {
@@ -509,14 +618,14 @@ h1, h2 {
   padding: 0 0.625rem;
   position: absolute;
   text-align: center;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
+  bottom: -10px;
   transform: translate(-50%, -50%);
   width: 100%;
 }
 .slideshow__control__arrow {
   cursor: pointer;
   padding: 0 1.4375rem;
+  height: 2.5rem;
 }
 @media screen and (max-width: 768px) {
   .slideshow__control__arrow {
@@ -530,7 +639,7 @@ h1, h2 {
   bottom: 1.5625rem;
   width: 100%;
   font-size: 1.125rem;
-  color: white;
+  color: #353535;
 }
 @media screen and (max-width: 768px) {
   .slideshow__index {
