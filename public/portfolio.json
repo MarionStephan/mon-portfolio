@@ -7,12 +7,14 @@
             "Configurer la navigation entre les pages de l'application avec React Router",
             "Développer des éléments de l'interface d'un site web grâce à des composants React"
         ],
-        "tags":[
+        "tags": [
             "React",
             "SASS"
         ],
-        "link":"https://github.com/MarionStephan/OpenClassroomsP7"
-        
+        "pictures": [
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+        ],
+        "link": "https://github.com/MarionStephan/OpenClassroomsP7"
     },
     {
         "title": "Piiquante",
@@ -22,14 +24,16 @@
             "Implémenter un modèle logique de données conformément à la réglementation",
             "Stocker des données de manière sécurisée"
         ],
-        "tags":[
+        "tags": [
             "Node.js",
             "Express",
             "MongoDB",
             "API"
         ],
-        "link":"https://github.com/MarionStephan/OpenClassroomsP6"
-        
+        "pictures": [
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg"
+        ],
+        "link": "https://github.com/MarionStephan/OpenClassroomsP6"
     },
     {
         "title": "Kanap",
@@ -40,12 +44,16 @@
             "Interagir avec un web service avec JavaScript",
             "Gérer des événements JavaScript"
         ],
-        "tags":[
+        "tags": [
             "Javascript",
             "API"
         ],
-        "link":"https://github.com/MarionStephan/OpenClassroomsProject5"
-        
+        "pictures": [
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+        ],
+        "link": "https://github.com/MarionStephan/OpenClassroomsProject5"
     },
     {
         "title": "Agence La Panthère",
@@ -57,14 +65,17 @@
             "Assurer l'accessibilité d'un site web",
             "Optimiser le référencement d'un site web"
         ],
-        "tags":[
+        "tags": [
             "SEO",
             "Performance",
             "Accessibilité",
             "Bootstrap"
         ],
-        "link":"https://github.com/MarionStephan/OpenClassroomsProject4"
-        
+        "pictures": [
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+        ],
+        "link": "https://github.com/MarionStephan/OpenClassroomsProject4"
     },
     {
         "title": "Oh My Food",
@@ -76,11 +87,14 @@
             "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
             "Mettre en place son environnement Front-End"
         ],
-        "tags":[
+        "tags": [
             "SASS",
             "Keyframes",
             "mobile-first"
         ],
-        "link":"https://github.com/MarionStephan/OpenClassroomsProject"
+        "pictures": [
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+        ],
+        "link": "https://github.com/MarionStephan/OpenClassroomsProject"
     }
 ]

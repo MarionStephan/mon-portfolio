@@ -1,8 +1,8 @@
 .header {
-    @include margin-padding(all, 100px 0, null, null);
+    @include margin-padding(all, 50px 0, null, null);
 
     &__titre {
-        @include title ($yellow, right, h1);
+        @include title ($purple, right, h1);
         @include margin-padding(all, 0 200px 50px 0, null, null);
     }
 
@@ -16,10 +16,11 @@
 
         &__img {
             width: 300px;
-            filter: drop-shadow(5px 5px 5px rgba(156, 156, 156, 0.75));        }
+            filter: drop-shadow(5px 5px 5px rgba(156, 156, 156, 0.75));
+        }
 
         &__intro {
-            background-color: $yellow;
+            background-color: $purple;
             width: 45%;
             border-radius: $border-radiusCat;
 
@@ -33,7 +34,7 @@
     @include margin-padding(all, 100px 0, null, null);
 
     &__titre {
-        @include title ($yellow, center, h2);
+        @include title ($purple, center, h2);
     }
 
     &__section {
@@ -51,7 +52,7 @@
         width: 40%;
         border: 2px solid $font;
         border-radius: $border-radiusCat;
-        box-shadow: 4px 4px 0px $yellow;
+        box-shadow: 4px 4px 0px $purple;
         @include margin-padding(null, null, all, 30px 50px);
 
         &__titre {

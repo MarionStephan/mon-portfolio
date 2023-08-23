@@ -7,7 +7,7 @@
 html {
     @include margin-padding(all, auto, all, 0 1.25rem);
     
-        background: linear-gradient(30deg,#a9def9,#f694c1,#d3f8e2,#feef66);
+        background: linear-gradient(30deg,$blue,$pink,$green,$purple);
         background-size: 240% 240%;
         animation: gradient-animation 10s ease infinite;
     background-attachment: fixed;
