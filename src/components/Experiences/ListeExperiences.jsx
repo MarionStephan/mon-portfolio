@@ -4,7 +4,7 @@ import CardExp from "../../components/Experiences/CardExp"
 function ListeExperiences() {
     const [experiences, setExperiences] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/experiences.json')
+        fetch('https://marion-stephan.fr/experiences.json')
             .then((response) => response.json())
             .then((data) => setExperiences(data))
             .catch((error) => console.error('Erreur lors du chargement des données : ', error));

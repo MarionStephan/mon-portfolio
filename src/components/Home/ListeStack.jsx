@@ -5,7 +5,7 @@ function ListeStack() {
     const [stack, setStack] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/stack.json')
+        fetch('https://marion-stephan.fr/stack.json')
             .then((response) => response.json())
             .then((data) => setStack(data.categories))
             .catch((error) => console.error('Erreur lors du chargement des données : ', error));

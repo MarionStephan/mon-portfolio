@@ -4,7 +4,7 @@ import CardForm from "../../components/Formations/CardForm";
 function ListeFormations() {
     const [formations, setFormations] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/formations.json')
+        fetch('https://marion-stephan.fr/formations.json')
             .then((response) => response.json())
             .then((data) => setFormations(data))
             .catch((error) => console.error('Erreur lors du chargement des données : ', error));

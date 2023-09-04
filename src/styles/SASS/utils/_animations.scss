@@ -42,7 +42,16 @@
     opacity: 1;
   }
 }
-
+@keyframes menu-reverse {
+  from {
+      transform: translatex(0);
+      opacity: 1;
+  }
+  to {
+      transform: translatex(100vw);
+      opacity: 0;
+  }
+}
 
 @keyframes gradient-animation {
   0% {

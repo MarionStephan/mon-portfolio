@@ -5,7 +5,7 @@ import Slideshow from "../../layout/Slideshow/index"
 function ListePortfolio() {
     const [portfolio, setPortfolio] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/portfolio.json')
+        fetch('https://marion-stephan.fr/portfolio.json')
             .then((response) => response.json())
             .then((data) => setPortfolio(data))
             .catch((error) => console.error('Erreur lors du chargement des données : ', error));

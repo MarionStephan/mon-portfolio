@@ -11,6 +11,9 @@ html {
         background-size: 240% 240%;
         animation: gradient-animation 10s ease infinite;
     background-attachment: fixed;
+    @include mobile-only{
+        @include margin-padding(all, 0, all, 0);
+    }
  }
 body {
     display: flex;
@@ -18,12 +21,6 @@ body {
     max-width: 77.5rem;
     height: 100%;
     @include margin-padding(all, 0 auto 0 auto, null, null);
-
-    @include tablet-only {
-        @include margin-padding(top, 1.25rem, null, null);
-
-    }
-
 }
 
 a {
