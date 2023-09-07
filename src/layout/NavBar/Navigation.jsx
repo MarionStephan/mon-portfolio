@@ -3,11 +3,11 @@ import DesktopNavbar from './DesktopNavBar';
 import MobileMenu from './MobileMenu';
 
 const Navigation = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 800);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 800);
     };
 
     window.addEventListener('resize', handleResize);

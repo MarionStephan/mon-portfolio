@@ -5,22 +5,30 @@
 }
 
 html {
+    overflow-x: hidden;
     @include margin-padding(all, auto, all, 0 1.25rem);
-    
-        background: linear-gradient(30deg,$blue,$pink,$green,$purple);
-        background-size: 240% 240%;
-        animation: gradient-animation 10s ease infinite;
+
+    background: linear-gradient(30deg, $blue, $pink, $green, $purple);
+    background-size: 240% 240%;
+    animation: gradient-animation 10s ease infinite;
     background-attachment: fixed;
-    @include mobile-only{
+
+    @include tablet-only {
         @include margin-padding(all, 0, all, 0);
     }
- }
+}
+
 body {
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     max-width: 77.5rem;
     height: 100%;
     @include margin-padding(all, 0 auto 0 auto, null, null);
+
+    @include tablet-only {
+        width: 100%;
+    }
 }
 
 a {
@@ -33,6 +41,7 @@ a {
     background-image: radial-gradient(#00000060 1px, rgba($color:$white, $alpha: 0.8) 1px),
         radial-gradient(rgba($color:$white, $alpha: 0.8)2px, rgba($white, 0.5) 2px);
     background-size: 30px 30px;
-    background-position: center, center;
+    background-position: top, center;
+    background-attachment: scroll;
     box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
 }

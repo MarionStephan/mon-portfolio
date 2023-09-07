@@ -9,9 +9,11 @@
         width: 80%;
         border: 2px solid black;
         border-width: 0 2px 2px;
-        margin: 35px auto 0 auto;
+        margin: 35px auto 50px auto;
         position: relative;
         border-radius: $border-radiusCat;
+
+
 
         &:before {
             content: "";
@@ -28,9 +30,26 @@
                     #111 550px);
         }
 
+        @include tablet-only {
+            width: 95%;
+        }
+
+        @include mobile-only {
+            border: none;
+
+            &:before {
+                display: none;
+            }
+        }
+
         &__titre {
             display: block;
             margin: -50px 22px;
+
+            @include mobile-only {
+                margin: 0;
+                font-size: 2rem;
+            }
         }
 
     }
@@ -41,8 +60,14 @@
         display: flex;
         justify-content: space-evenly;
 
+        @include mobile-only {
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-top: 50px;
+        }
+
         &:last-of-type {
-            margin-bottom: 100px;
+            margin-bottom: 50px;
         }
 
         &__desc {
@@ -53,7 +78,9 @@
             width: 45%;
             justify-content: center;
 
-
+            @include mobile-only {
+                width: 90%;
+            }
 
 
         }
@@ -108,6 +135,7 @@
                 &:first-of-type {
                     font-size: 1.5rem;
                 }
+
                 &::before,
                 &::after {
                     content: " ";
@@ -120,7 +148,7 @@
 
                 &::before {
                     background: $purple;
-                    transform: translate(6px, 6px);                    
+                    transform: translate(6px, 6px);
                     border-radius: $border-radiusCat;
                 }
 
@@ -148,9 +176,9 @@
     transform: rotate(-2deg);
 
     @include mobile-only {
-        height: 15.9375rem;
         @include margin-padding (all, 1.25rem auto .9375rem auto, null, null);
-
+        width: 90%;
+        height: 300px;
     }
 
     position: relative;
@@ -192,6 +220,13 @@
         border: 3px solid white;
         background: white;
 
+        @include tablet-only {
+            height: 80%;
+        }
+
+        @include mobile-only {
+            height: 100%;
+        }
 
         &__img {
             flex-shrink: 0;
@@ -211,15 +246,24 @@
         position: absolute;
         text-align: center;
         bottom: -10px;
-        
         transform: translate(-50%, -50%);
         width: 100%;
+
+        @include tablet-only {
+            bottom: 76px;
+        }
+
+        @include mobile-only {
+            bottom: -5px;
+        }
+
         &__arrow {
             cursor: pointer;
             @include margin-padding(null, null, all, 0 1.4375rem);
             height: 2.5rem;
+
             @include mobile-only {
-                height: 1.5rem;
+                height: 2rem;
                 @include margin-padding(null, null, all, 0);
 
             }
@@ -229,10 +273,15 @@
     &__index {
         position: absolute;
         text-align: center;
-        bottom: 1.5625rem;
-        width: 100%;
+        bottom: 20px;
+        width: 50%;
+        left: 25%;
         font-size: 1.125rem;
         color: $font;
+
+        @include tablet-only {
+            bottom: 100px;
+        }
 
         @include mobile-only {
             display: none;

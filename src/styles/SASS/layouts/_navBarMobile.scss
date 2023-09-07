@@ -1,4 +1,3 @@
-
 .navbar__burger {
     width: 40px;
     height: 40px;
@@ -92,7 +91,9 @@
             height: 15%;
             border-top-left-radius: 50px;
             font-size: 3rem;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
             &:nth-of-type(4n+1) {
                 background-color: $purple;
@@ -108,7 +109,7 @@
 
             &:nth-of-type(4) {
                 background-color: $pink;
-            }           
+            }
         }
     }
 
@@ -146,6 +147,7 @@
         }
     }
 }
+
 .nav__mobile__link.reverse-exit-animation {
     animation: menu-reverse 1s forwards;
     opacity: 1;
