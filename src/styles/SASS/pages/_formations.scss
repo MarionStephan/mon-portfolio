@@ -43,56 +43,61 @@
 
         &__title {
             font-size: 2rem;
+
             @include mobile-only {
                 font-size: 1.7rem;
                 width: 77%;
             }
         }
 
-    &__school {
-        mark {
-            background: linear-gradient(to right,
-                    rgba($green, 0.6) 0%,
-                    rgba($green, 0.7) 60%,
-                    rgba($green, 0.7) 60%,
-                    rgba($green, 0.8) 85%,
-                    rgba($green, 1) 100%);
-            padding: 2px 10px;
+        &__school {
+            @include mobile-only {
+                width: 80%;
+            }
 
-            border-radius: $border-radiusCat;
-        }
-    }
+            mark {
+                background: linear-gradient(to right,
+                        rgba($green, 0.6) 0%,
+                        rgba($green, 0.7) 60%,
+                        rgba($green, 0.7) 60%,
+                        rgba($green, 0.8) 85%,
+                        rgba($green, 1) 100%);
+                padding: 2px 10px;
 
-    &__liste {
-        list-style: none;
-
-        li:not(:last-child) {
-            margin-bottom: 10px;
+                border-radius: $border-radiusCat;
+            }
         }
 
-    }
+        &__liste {
+            list-style: none;
 
-    &__year {
-        width: 250px;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        font-family: "pacifico";
-        transform: rotate(-10deg);
-        @include margin-padding (null, null, all, 30px);
-        @include foldedCorner(30deg, $green, 1.5em);
-        box-shadow: -.2em .2em .3em -.1em rgba(0, 0, 0, .15);
+            li:not(:last-child) {
+                margin-bottom: 10px;
+            }
 
-        @include mobile-only {
-            width: 100px;
-            height: 100px;
-            font-size: 0.7rem;
-            padding: 20px;
-            align-self: flex-end;
-            margin-right: .625rem;
+        }
+
+        &__year {
+            width: 250px;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-family: "pacifico";
+            transform: rotate(-10deg);
+            @include margin-padding (null, null, all, 30px);
+            @include foldedCorner(30deg, $green, 1.5em);
+            box-shadow: -.2em .2em .3em -.1em rgba(0, 0, 0, .15);
+
+            @include mobile-only {
+                width: 100px;
+                height: 100px;
+                font-size: 0.7rem;
+                padding: 20px;
+                align-self: flex-end;
+                margin-right: .625rem;
+            }
         }
     }
-}
 }
