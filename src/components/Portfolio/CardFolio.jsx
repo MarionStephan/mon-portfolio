@@ -12,8 +12,10 @@ function CardFolio(props) {
       ))}</ul>
       <div className="portfolio__article__btn">
         <a href={props.link[0]} target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
-        <a href={props.link[1]} target="_blank" rel="noreferrer">Visiter le site</a>
-      </div>
+        {props.link[1] && props.link[1].trim() !== "" && (
+          <a href={props.link[1]} target="_blank" rel="noreferrer">Visiter le site</a>
+        )}
+        </div>
     </div>
   );
 }

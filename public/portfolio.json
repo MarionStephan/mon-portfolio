@@ -12,9 +12,12 @@
             "SASS"
         ],
         "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg"
+            "./images/portfolio/kasa/accueil.png",
+            "./images/portfolio/kasa/fiche.png",
+            "./images/portfolio/kasa/apropos.png",
+            "./images/portfolio/kasa/erreur.png"
         ],
-        "link": ["https://github.com/MarionStephan/OpenClassroomsProject7", "https://kasa.marion-stephan.fr"]
+        "link": ["https://github.com/MarionStephan/OpenClassroomsP7", "https://kasa.marion-stephan.fr"]
     },
     {
         "title": "Piiquante",
@@ -31,9 +34,11 @@
             "API"
         ],
         "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg"
+            "./images/portfolio/piiquante/login.png",
+            "./images/portfolio/piiquante/sauces.png",
+            "./images/portfolio/piiquante/fiche.png"
         ],
-        "link": ["https://github.com/MarionStephan/OpenClassroomsProject6", "https://piiquante.marion-stephan.fr"]
+        "link": ["https://github.com/MarionStephan/OpenClassroomsP6"]
     },
     {
         "title": "Kanap",
@@ -49,11 +54,11 @@
             "API"
         ],
         "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+            "./images/portfolio/kanap/accueil.png",
+            "./images/portfolio/kanap/produit.png",
+            "./images/portfolio/kanap/panier.png"
         ],
-        "link": ["https://github.com/MarionStephan/OpenClassroomsProject5", "https://kanap.marion-stephan.fr/html"]
+        "link": ["https://github.com/MarionStephan/OpenClassroomsProject5", "https://kanap.marion-stephan.fr/html/"]
     },
     {
         "title": "Agence La Panthère",
@@ -72,8 +77,12 @@
             "Bootstrap"
         ],
         "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+            "./images/portfolio/lapanthere/header-avant.png",
+            "./images/portfolio/lapanthere/header-apres.png",
+            "./images/portfolio/lapanthere/presentation-avant.png",
+            "./images/portfolio/lapanthere/presentation-apres.png",
+            "./images/portfolio/lapanthere/realisations-avant.png",
+            "./images/portfolio/lapanthere/realisations-apres.png"
         ],
         "link": ["https://github.com/MarionStephan/OpenClassroomsProject4", "https://lapanthere.marion-stephan.fr"]
     },
@@ -93,7 +102,8 @@
             "mobile-first"
         ],
         "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+            "./images/portfolio/ohmyfood/accueil.png",
+            "./images/portfolio/ohmyfood/restaurant.png"
         ],
         "link": ["https://github.com/MarionStephan/OpenClassroomsProject", "https://ohmyfood.marion-stephan.fr"]
     },
@@ -108,9 +118,8 @@
             "CSS"
         ],
         "pictures": [
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg",
-            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-5.jpg"
+            "./images/portfolio/booki/accueil.png"
         ],
-        "link": ["https://github.com/MarionStephan/OpenClassroomsProject", "https://booki.marion-stephan.fr"]
+        "link": ["https://github.com/MarionStephan/Projet-2", "https://booki.marion-stephan.fr"]
     }
 ]
