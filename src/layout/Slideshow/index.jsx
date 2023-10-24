@@ -30,7 +30,7 @@ function Slideshow(props) {
           index === currentSlide &&(
             <img
             className={`slideshow__pictures__img ${index === currentSlide ? "slide-in" : "slide-out"}`}
-            alt="banniere-page-logement"
+            alt={`${props.title} - Image ${index + 1}`}
             src={picture}
             key={index}
           />)

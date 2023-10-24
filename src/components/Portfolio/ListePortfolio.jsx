@@ -26,7 +26,7 @@ function ListePortfolio() {
                             link={projet.link}
                         />
 
-                        <Slideshow slides={projet.pictures}/>
+                        <Slideshow slides={projet.pictures} title={projet.title}/>
                     </article>
                     
                 ))}
